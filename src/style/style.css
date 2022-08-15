@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Roboto:wght@100;300&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    text-align: center;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background: linear-gradient(to right,rgb(215, 201, 129),rgb(0, 255, 136));
+     text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+    padding: 2.5rem 0rem;
+    
+}
+.title{
+    font-size: 4rem;
+    font-weight: 800;
+    color: aliceblue;
+
+}
+.h1{
+    color: black;
+    background-color: red;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tags{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.tags li{
+ 
+    padding:0.5rem 1.8rem;
+    border-radius: 10px;
+    border:2px solid black;
+    font-weight: 600;
+    font-size: 1.5rem;
+  
+    color: rgb(194, 171, 171);
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    
+}
+.hover{
+    background-color: rgb(4, 4, 4);
+    color: white;
+ 
+    border: 2px solid rgb(0, 0, 0);
+ 
+}
+.cards{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards li{
+    /* height: 9rem; */
+    object-fit:contain;
+    box-sizing: border-box;
+    margin-left: 1rem;
+    padding: 1rem;
+    border: 2px solid 115, 226, 198;
+    width: 30%;
+    background-color: rgb(115, 226, 198);
+    margin-bottom: 2rem;
+    border-radius: 0.9rem 0rem 0.9rem 0rem;
+}
+.cards li img{
+    width: 50%;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+.cards li h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    
+}
+.cards li p{
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(105, 92, 92);
+    
+}
+.cards li button{
+    padding: 0.4rem 2rem;
+    background-color: black;
+    border: 1px solid black;
+    /* color: white; */
+    font-weight: 600;
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* responsive section starts here  */
+
+@media only screen and (max-width: 600px){
+   
+
+    .title{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .tags{
+        width: 50%;
+        overflow: hidden;
+    }
+    .tags li{
+        object-fit: cover;
+        height: 24px;
+        width: 109.738px;
+    }
+    .cards li button{
+       font-size: 0.5rem;
+        padding: 0.2rem,1rem;
+    }
+} 
